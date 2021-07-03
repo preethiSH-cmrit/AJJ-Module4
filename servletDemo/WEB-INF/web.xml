@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE web-app
-PUBLIC "-//Sun Microsystems, Inc.//DTD Web
-Application 2.3//EN"  "http://java.sun.com/dtd/web-app_2_3.dtd">
+PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"  "http://java.sun.com/dtd/web-app_2_3.dtd">
 
 <web-app>
 <servlet>
 <servlet-name>HelloServlet</servlet-name>
 <servlet-class>HelloServlet</servlet-class>
 <init-param>
-            <param-name>CreatedOn</param-name>
-            <param-value>July 01 2021</param-value>
+    <param-name>CreatedOn</param-name>
+    <param-value>July 01 2021</param-value>
 </init-param>
 </servlet>
-<servlet>
 
-<servlet-name>paramServlet</servlet-name>
-<servlet-class>paramServlet</servlet-class>
-
-</servlet>
 
 <servlet-mapping>
 <servlet-name>HelloServlet</servlet-name>
 <url-pattern>/HelloServlet</url-pattern>
 </servlet-mapping>
 
-
+<servlet>
+<servlet-name>paramServlet</servlet-name>
+<servlet-class>paramServlet</servlet-class>
+</servlet>
 <servlet-mapping>
 <servlet-name>paramServlet</servlet-name>
 <url-pattern>/servlets/paramServlet</url-pattern>
 </servlet-mapping>
+
+<servlet>
+<servlet-name>bgcolorServlet</servlet-name>
+<servlet-class>bgcolorServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>bgcolorServlet</servlet-name>
+<url-pattern>/servlets/bgcolorServlet</url-pattern>
+</servlet-mapping>
+
 
 <servlet>
 
@@ -41,5 +48,35 @@ Application 2.3//EN"  "http://java.sun.com/dtd/web-app_2_3.dtd">
 <servlet-mapping>
 <servlet-name>param</servlet-name>
 <url-pattern>/servlet/param</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>colorServlet</servlet-name>
+<servlet-class>colorServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>colorServlet</servlet-name>
+<url-pattern>/servlet/colorServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>cookieServlet</servlet-name>
+<servlet-class>cookieServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>cookieServlet</servlet-name>
+<url-pattern>/servlet/cookieServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>getCookieServlet</servlet-name>
+<servlet-class>getCookieServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>getCookieServlet</servlet-name>
+<url-pattern>/servlet/getCookieServlet</url-pattern>
 </servlet-mapping>
 </web-app>
